@@ -15,9 +15,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
       openGraph={{
         type: 'website',
         url: `https://sizy.co.kr`,
-        title: `아토`,
+        title: `sizy`,
         description: 'sizy는 매니저와 고객을 연결합니다',
-        siteName: '아토',
+        siteName: 'sizy',
       }}
     ></DefaultSeo>
     <Component {...pageProps} />
