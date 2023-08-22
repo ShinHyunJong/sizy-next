@@ -8,7 +8,12 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head />
+        <Head>
+          <meta
+            name="naver-site-verification"
+            content="6117b195ed77f0f26ea51a68d9a3b5d259b02fa2"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
