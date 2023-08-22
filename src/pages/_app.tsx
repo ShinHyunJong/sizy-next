@@ -9,7 +9,7 @@ import theme from '@/styles/theme';
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <ChakraProvider theme={theme}>
     <DefaultSeo
-      title={'sizy::오프라인 매장 고객관리툴'}
+      title={'사이지::오프라인 매장 고객관리툴'}
       description={`sizy는 매니저와 고객을 연결합니다`}
       canonical={`https://sizy.co.kr`}
       openGraph={{
@@ -18,6 +18,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
         title: `sizy`,
         description: 'sizy는 매니저와 고객을 연결합니다',
         siteName: 'sizy',
+        images: [{ url: 'https://assets.sizy.co.kr/landing/og_image.jpeg' }],
       }}
     ></DefaultSeo>
     <Component {...pageProps} />
