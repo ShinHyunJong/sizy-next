@@ -26,7 +26,11 @@ function FeatureNumber() {
                 <Heading color="gray.600" fontSize={fontSize.pointHeader}>
                   포인트 적립처럼 간단하게!
                 </Heading>
-                <Heading color="gray.500" fontSize={fontSize.pointHeader}>
+                <Heading
+                  wordBreak="keep-all"
+                  color="gray.500"
+                  fontSize={fontSize.pointHeader}
+                >
                   휴대폰 번호하나로만 고객이 직접 등록하고, 매장에서 관리하세요
                 </Heading>
               </Stack>

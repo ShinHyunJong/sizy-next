@@ -26,7 +26,7 @@ function FeatureNotice() {
                 <Heading fontSize={fontSize.pointHeader}>
                   수선, 주문, 리오더, 택배 알림!
                 </Heading>
-                <Heading fontSize={fontSize.pointHeader}>
+                <Heading wordBreak="keep-all" fontSize={fontSize.pointHeader}>
                   상황별로 미리 등록된 카카오 알림톡으로 편하게 연락하세요
                 </Heading>
               </Stack>
