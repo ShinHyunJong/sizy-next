@@ -12,7 +12,11 @@ function FeatureNote() {
           <Flex flex={1} alignItems="center" textAlign="center">
             <Stack spacing={8}>
               <Stack>
-                <Heading color="point.400" fontSize={fontSize.sectionHeader}>
+                <Heading
+                  as="h1"
+                  color="point.400"
+                  fontSize={fontSize.sectionHeader}
+                >
                   나만의 VIP 노트
                 </Heading>
                 <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>

@@ -23,7 +23,7 @@ function FeatureNotice() {
                 </Heading>
               </Stack>
               <Stack color="gray.500">
-                <Heading fontSize={fontSize.pointHeader}>
+                <Heading as="h1" fontSize={fontSize.pointHeader}>
                   수선, 주문, 리오더, 택배 알림!
                 </Heading>
                 <Heading wordBreak="keep-all" fontSize={fontSize.pointHeader}>

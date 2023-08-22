@@ -15,10 +15,11 @@ function Greeting() {
       <Flex justifyContent="center" position="absolute" w="full" h="full">
         <Center textAlign="center">
           <Stack as={Box} py={{ base: '25%', md: '28%', lg: '30%' }}>
-            <Heading as="b" color="point.200" fontSize={['6xl', '7xl', '8xl']}>
+            <Heading as="h1" color="point.200" fontSize={['6xl', '7xl', '8xl']}>
               sizy
             </Heading>
             <Heading
+              as="h1"
               fontWeight={900}
               fontSize={fontSize.titleHeader}
               lineHeight="110%"
