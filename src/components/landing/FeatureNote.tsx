@@ -17,18 +17,19 @@ function FeatureNote() {
                   color="point.400"
                   fontSize={fontSize.sectionHeader}
                 >
-                  나만의 VIP 노트
+                  고객들에게 실시간 알림
                 </Heading>
                 <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
-                  매번 고객정보 잊어버리셨죠?
+                  고객님에게 매번 연락하기 번거로우시죠?
                 </Heading>
               </Stack>
               <Stack color="gray.500">
                 <Heading fontSize={fontSize.pointHeader}>
-                  이젠 온라인으로!
+                  주문장 발급과 동시에, 고객님에게 알림을 보내세요
                 </Heading>
                 <Heading wordBreak="keep-all" fontSize={fontSize.pointHeader}>
-                  고객 응대할 때 필요한 특이사항을 미리 등록하고, 소통하세요
+                  배송 현황, 주문 혹은 수선한 상품정보를 고객님들이 확인하실 수
+                  있습니다
                 </Heading>
               </Stack>
             </Stack>

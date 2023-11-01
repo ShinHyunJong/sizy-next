@@ -10,8 +10,8 @@ const Index = () => {
   return (
     <>
       <Greeting></Greeting>
-      <FeatureNumber></FeatureNumber>
       <FeatureNote></FeatureNote>
+      <FeatureNumber></FeatureNumber>
       <FeatureNotice></FeatureNotice>
       <Hard></Hard>
       <Smart></Smart>

@@ -16,15 +16,15 @@ function FeatureNotice() {
             <Stack spacing={8}>
               <Stack>
                 <Heading color="point.400" fontSize={fontSize.sectionHeader}>
-                  상황별 맞춤 알림톡
+                  자동으로 관리되는 내 고객
                 </Heading>
                 <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
-                  고객님께 연락하기 번거롭지 않으셨나요?
+                  고객노트 따로 작성하시죠?
                 </Heading>
               </Stack>
               <Stack color="gray.500">
                 <Heading as="h1" fontSize={fontSize.pointHeader}>
-                  수선, 주문, 리오더, 택배 알림!
+                  고객님들의 정보를 바로바로 검색해서 판매에 힘이 되어드립니다.
                 </Heading>
                 <Heading wordBreak="keep-all" fontSize={fontSize.pointHeader}>
                   상황별로 미리 등록된 카카오 알림톡으로 편하게 연락하세요

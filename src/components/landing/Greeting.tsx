@@ -15,9 +15,6 @@ function Greeting() {
       <Flex justifyContent="center" position="absolute" w="full" h="full">
         <Center textAlign="center">
           <Stack as={Box} py={{ base: '25%', md: '28%', lg: '30%' }}>
-            <Heading as="h1" color="point.200" fontSize={['6xl', '7xl', '8xl']}>
-              sizy
-            </Heading>
             <Heading
               as="h1"
               fontWeight={900}
@@ -25,7 +22,10 @@ function Greeting() {
               lineHeight="110%"
               color="white"
             >
-              매니저와 고객을 연결합니다.
+              오프라인 매장을 위한
+            </Heading>
+            <Heading as="h1" color="point.200" fontSize={['4xl', '5xl', '6xl']}>
+              온라인 주문장, sizy
             </Heading>
           </Stack>
         </Center>

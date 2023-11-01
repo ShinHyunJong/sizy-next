@@ -16,22 +16,22 @@ function FeatureNumber() {
             <Stack spacing={8}>
               <Stack>
                 <Heading color="point.400" fontSize={fontSize.sectionHeader}>
-                  간편 고객정보 등록
+                  간편 주소 등록
                 </Heading>
                 <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
-                  고객님이 개인정보입력을 꺼려하시나요?
+                  매번 다른 곳에서 주소 검색하셨나요?
                 </Heading>
               </Stack>
               <Stack>
                 <Heading color="gray.600" fontSize={fontSize.pointHeader}>
-                  포인트 적립처럼 간단하게!
+                  주문장 발급할 때, 즉시 주소검색!
                 </Heading>
                 <Heading
                   wordBreak="keep-all"
                   color="gray.500"
                   fontSize={fontSize.pointHeader}
                 >
-                  휴대폰 번호하나로만 고객이 직접 등록하고, 매장에서 관리하세요
+                  정확한 주소 등록을 통해, 배송지 오류를 줄이세요.
                 </Heading>
               </Stack>
             </Stack>
