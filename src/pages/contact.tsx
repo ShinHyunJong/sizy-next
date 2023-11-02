@@ -50,7 +50,7 @@ function Contact() {
           </Stack>
           <Stack>
             <Controller
-              name="brand"
+              name="phone"
               control={control}
               rules={{ required: true }}
               render={({ field }) => {
