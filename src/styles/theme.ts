@@ -30,6 +30,38 @@ const inputStyle: ComponentStyleConfig = {
   },
 };
 
+const textareaStyle: ComponentStyleConfig = {
+  baseStyle: {},
+  variants: {
+    outline: {
+      field: {
+        borderRadius: 'full',
+      },
+    },
+    clear: {
+      field: {
+        border: 'none',
+        outline: 'none',
+        padding: 0,
+        bg: 'transparent',
+        _focus: {
+          outline: '0px',
+          boxShadow: 'none',
+          border: 'none',
+        },
+        _hover: {
+          boxShadow: 'none',
+        },
+      },
+    },
+  },
+  defaultProps: {
+    size: 'md',
+    variant: 'outline',
+    focusBorderColor: 'point.400',
+  },
+};
+
 const theme = extendTheme({
   fonts: {
     global: 'Pretendard',
@@ -39,6 +71,7 @@ const theme = extendTheme({
   colors,
   components: {
     Input: inputStyle,
+    Textarea: textareaStyle,
   },
 });
 
