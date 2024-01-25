@@ -1,11 +1,17 @@
 import '../styles/global.css';
 
 import { ChakraProvider } from '@chakra-ui/react';
+import Hotjar from '@hotjar/browser';
 import type { AppProps } from 'next/app';
 import { DefaultSeo } from 'next-seo';
 
 import Header from '@/components/Header';
 import theme from '@/styles/theme';
+
+const siteId = 3839902;
+const hotjarVersion = 6;
+
+Hotjar.init(siteId, hotjarVersion);
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <ChakraProvider theme={theme}>

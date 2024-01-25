@@ -1,7 +1,7 @@
 import { Box, Container, Flex, Heading, Stack } from '@chakra-ui/react';
 import Image from 'next/image';
 
-import phoneNumberImg from '@/public/assets/images/landing/phoneNumber.png';
+import phoneNumberImg from '@/public/assets/images/landing/address.png';
 import { fontSize } from '@/styles';
 
 function FeatureNumber() {
@@ -38,6 +38,7 @@ function FeatureNumber() {
           </Flex>
           <Flex flex={1}>
             <Image
+              style={{ borderRadius: '20px' }}
               placeholder="empty"
               alt="phoneNumberImg"
               src={phoneNumberImg}

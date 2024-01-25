@@ -1,7 +1,8 @@
 import { Box, Container, Flex, Heading, Stack } from '@chakra-ui/react';
 import Image from 'next/image';
 
-import customerNotiImg from '@/public/assets/images/landing/customerNoti.png';
+import tabletNoteImg from '@/public/assets/images/landing/tabletNote.png';
+// import customerNotiImg from '@/public/assets/images/landing/customerNoti.png';
 import { fontSize } from '@/styles';
 
 function FeatureNotice() {
@@ -36,7 +37,7 @@ function FeatureNotice() {
             <Image
               placeholder="empty"
               alt="customerNotiImg"
-              src={customerNotiImg}
+              src={tabletNoteImg}
             ></Image>
           </Flex>
         </Flex>
