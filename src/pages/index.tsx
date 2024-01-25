@@ -10,7 +10,6 @@ import Why from '@/components/landing/Why';
 const Index = () => {
   return (
     <>
-  
       <Greeting></Greeting>
       <Why></Why>
       <FeatureNote></FeatureNote>
