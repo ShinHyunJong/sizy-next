@@ -22,16 +22,23 @@ function Header() {
             sizy
           </Text>
         </Link>
+
         <Link href="/">
-          <Flex as="li">서비스 안내</Flex>
+          <Flex fontSize={['sm', 'md']} as="li">
+            서비스 안내
+          </Flex>
         </Link>
         <Link href="/pricing">
-          <Flex as="li">도입 및 비용안내</Flex>
+          <Flex fontSize={['sm', 'md']} as="li">
+            도입 및 비용
+          </Flex>
         </Link>
       </Flex>
       <Flex gap={4} alignItems="center">
         <Link href="https://store.sizy.co.kr" target="_blank">
-          <Flex>매장 로그인</Flex>
+          <Flex display={['none', 'flex']} fontSize={['sm', 'md']}>
+            매장 로그인
+          </Flex>
         </Link>
         <Link href="/contact">
           <Button colorScheme="point">도입 문의</Button>
