@@ -73,7 +73,7 @@ function Contact() {
                           {...field}
                           colorScheme="point"
                           variant="filled"
-                          placeholder="ex)비비안 현대무역센터점"
+                          placeholder="브랜드명, 지점명을 적어주세요"
                         ></Input>
                       </FormControl>
                     );
