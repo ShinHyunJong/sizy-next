@@ -35,7 +35,7 @@ function Header() {
             fontSize={['sm', 'md']}
             as="li"
           >
-            도입 및 비용
+            체험 및 비용
           </Flex>
         </Link>
       </Flex>
@@ -45,7 +45,7 @@ function Header() {
         </Link>
         <Link href="/contact">
           <Button display={['none', 'block']} colorScheme="point">
-            도입 문의
+            체험 문의
           </Button>
         </Link>
       </Flex>

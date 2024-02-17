@@ -54,7 +54,7 @@ function Contact() {
   return (
     <Box mt="60px">
       <Container maxW="6xl" py={16}>
-        <Heading mb={8}>도입 문의</Heading>
+        <Heading mb={8}>체험 문의</Heading>
         {!submit ? (
           <>
             <SimpleGrid columns={{ base: 1, md: 2 }} gap={4}>
