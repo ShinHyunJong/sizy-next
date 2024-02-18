@@ -16,6 +16,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     Hotjar.init(siteId, hotjarVersion);
   }, []);
+
   return (
     <ChakraProvider theme={theme}>
       <DefaultSeo
