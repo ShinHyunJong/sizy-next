@@ -21,7 +21,7 @@ function FeatureNumber() {
               </Heading>
             </Stack>
           </Fade>
-          <video autoPlay muted loop style={{ borderRadius: 20 }}>
+          <video playsInline autoPlay muted loop style={{ borderRadius: 20 }}>
             <source
               src="https://sizy-assets.s3.ap-northeast-2.amazonaws.com/landing/create.mp4"
               type="video/mp4"
