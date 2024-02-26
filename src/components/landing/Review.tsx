@@ -73,7 +73,9 @@ function Review() {
                     <Image alt={x.name} unoptimized src={x.src}></Image>
                   </Flex>
                   <Text color="gray.800" fontSize={['md', 'lg', 'xl']}>
-                    "{x.review}"
+                    {`"`}
+                    {x.review}
+                    {`"`}
                   </Text>
                 </Box>
               );

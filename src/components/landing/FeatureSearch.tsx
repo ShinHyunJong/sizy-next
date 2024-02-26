@@ -16,7 +16,7 @@ function FeatureSearch() {
           <Stack spacing={1}>
             <Fade direction="up" triggerOnce>
               <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
-                '누구였지?'
+                {`'`}누구였지?{`'`}
               </Heading>
               <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
                 노트에서 찾지 말고

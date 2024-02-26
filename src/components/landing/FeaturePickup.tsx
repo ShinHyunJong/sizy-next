@@ -48,7 +48,7 @@ function FeaturePickup() {
               알림톡 전송!
             </Heading>
             <Heading fontSize={fontSize.sectionHeader}>
-              "못 받았는데요?"는 이제 없습니다.
+              {`"`}못 받았는데요?{`"`} 는 이제 없습니다.
             </Heading>
           </Stack>
         </Stack>
