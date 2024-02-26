@@ -22,10 +22,10 @@ function Greeting() {
               lineHeight="110%"
               color="white"
             >
-              오프라인 매장을 위한
+              의류 매장 매니저를 위한
             </Heading>
             <Heading as="h1" color="point.200" fontSize={['4xl', '5xl', '6xl']}>
-              온라인 주문장, sizy
+              온라인 주문장
             </Heading>
           </Stack>
         </Center>

@@ -30,7 +30,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           description:
             '사이지는 온라인 주문장으로 매장에서의 번거로움을 해소합니다.',
           siteName: 'sizy',
-          images: [{ url: 'https://assets.sizy.co.kr/landing/og_image.jpeg' }],
+          images: [{ url: 'https://assets.sizy.co.kr/landing/ogImage.jpeg' }],
         }}
       ></DefaultSeo>
       <Header></Header>

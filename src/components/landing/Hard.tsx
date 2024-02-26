@@ -17,6 +17,7 @@ function Hard() {
             alignItems="center"
             textAlign="center"
             h="full"
+            px={4}
             justifyContent="center"
           >
             <Heading
@@ -24,7 +25,14 @@ function Hard() {
               color="white"
               fontSize={{ base: '3xl', sm: '3xl', md: '6xl' }}
             >
-              흩어진 고객 정보로 힘들어 하지 말고
+              주문, 더 이상 번거롭지 않아요.
+            </Heading>
+            <Heading
+              wordBreak="keep-all"
+              color="white"
+              fontSize={{ base: '3xl', sm: '3xl', md: '6xl' }}
+            >
+              바로 무료 체험하세요!
             </Heading>
           </Flex>
         </Flex>
