@@ -10,7 +10,7 @@ function Greeting() {
     <Box className="mainBg" h="100vh" position="relative">
       <Box
         bg="black"
-        opacity={0.55}
+        opacity={0.4}
         position="absolute"
         width="full"
         h="full"
