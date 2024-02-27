@@ -1,41 +1,37 @@
 import { Box, Container, Heading, Stack, Text } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
-import { useForm } from 'react-hook-form';
 
-import { api } from '@/requests';
-
-type FormValues = {
-  brand: string;
-  phone: string;
-  text: string;
-};
+// type FormValues = {
+//   brand: string;
+//   phone: string;
+//   text: string;
+// };
 
 function Contact() {
-  const {
-    control,
-    handleSubmit,
-    formState: { isValid },
-  } = useForm<FormValues>();
+  // const {
+  //   control,
+  //   handleSubmit,
+  //   formState: { isValid },
+  // } = useForm<FormValues>();
 
   const router = useRouter();
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   const { submit } = router.query;
-  const onConfirm = async (data: FormValues) => {
-    try {
-      setLoading(true);
-      await api.post('/inquiry', {
-        brand: data.brand,
-        phone: data.phone,
-        text: data.text,
-      });
-      setLoading(false);
+  // const onConfirm = async (data: FormValues) => {
+  //   try {
+  //     setLoading(true);
+  //     await api.post('/inquiry', {
+  //       brand: data.brand,
+  //       phone: data.phone,
+  //       text: data.text,
+  //     });
+  //     setLoading(false);
 
-      router.push('/contact?submit=true');
-    } catch (error) {
-      setLoading(false);
-    }
-  };
+  //     router.push('/contact?submit=true');
+  //   } catch (error) {
+  //     setLoading(false);
+  //   }
+  // };
 
   return (
     <Box mt="60px">

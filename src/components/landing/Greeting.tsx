@@ -1,5 +1,4 @@
 import { Box, Container, Flex, Heading, Stack } from '@chakra-ui/react';
-import { useRouter } from 'next/router';
 import { Fade } from 'react-awesome-reveal';
 
 import { fontSize } from '@/styles';
@@ -7,7 +6,6 @@ import { fontSize } from '@/styles';
 import KakaoTrialButton from '../global/KakaoTrialButton';
 
 function Greeting() {
-  const router = useRouter();
   return (
     <Box className="mainBg" h="100vh" position="relative">
       <Box

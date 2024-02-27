@@ -12,7 +12,7 @@ interface StatsCardProps {
   title: string;
 }
 function StatsCard(props: StatsCardProps) {
-  const { title, stat } = props;
+  const { title } = props;
   return (
     <Stat
       px={{ base: 4, md: 8 }}
