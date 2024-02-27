@@ -57,7 +57,7 @@ function Price() {
         <PriceWrapper>
           <Box py={4} px={12}>
             <Text fontWeight="500" fontSize="2xl">
-              한달 무료체험 후, 월 결제
+              두달 무료체험 후, 월 결제
             </Text>
             <HStack justifyContent="center">
               <Text fontSize="3xl" fontWeight="600">
@@ -79,7 +79,7 @@ function Price() {
             <List spacing={3} textAlign="start" px={12}>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                한달 무료체험
+                두달 무료체험
               </ListItem>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />

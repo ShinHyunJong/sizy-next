@@ -40,7 +40,7 @@ function Contact() {
   return (
     <Box mt="60px">
       <Container maxW="6xl" py={16}>
-        <Heading mb={8}>무료 체험</Heading>
+        <Heading mb={8}>무료 체험하기</Heading>
         <Heading mb={8}>
           아래 카카오 신청하기 버튼을 눌러 바로 체험해보세요!
         </Heading>

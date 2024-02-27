@@ -1,8 +1,10 @@
-import { Box, Button, Container, Flex, Heading, Stack } from '@chakra-ui/react';
+import { Box, Container, Flex, Heading, Stack } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import { Fade } from 'react-awesome-reveal';
 
 import { fontSize } from '@/styles';
+
+import KakaoTrialButton from '../global/KakaoTrialButton';
 
 function Greeting() {
   const router = useRouter();
@@ -35,10 +37,16 @@ function Greeting() {
                 >
                   의류 매장을 위한
                 </Heading>
-                <Heading as="h1" color="white" fontSize={['4xl', '5xl', '6xl']}>
+                <Heading
+                  as="h1"
+                  color="white"
+                  fontSize={['4xl', '5xl', '6xl']}
+                  mb={8}
+                >
                   온라인 주문장
                 </Heading>
-                <Flex mt={8}>
+                <KakaoTrialButton></KakaoTrialButton>
+                {/* <Flex mt={8}>
                   <Button
                     onClick={() => router.push('/contact')}
                     size="lg"
@@ -46,7 +54,7 @@ function Greeting() {
                   >
                     무료 체험
                   </Button>
-                </Flex>
+                </Flex> */}
               </Fade>
             </Stack>
           </Flex>

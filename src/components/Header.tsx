@@ -1,4 +1,4 @@
-import { Button, Flex, Text } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 
 function Header() {
@@ -43,11 +43,11 @@ function Header() {
         <Link href="https://store.sizy.co.kr" target="_blank">
           <Flex fontSize={['sm', 'md']}>매장 로그인</Flex>
         </Link>
-        <Link href="/contact">
+        {/* <Link href="/contact">
           <Button display={['none', 'block']} colorScheme="point">
             무료 체험
           </Button>
-        </Link>
+        </Link> */}
       </Flex>
     </Flex>
   );
