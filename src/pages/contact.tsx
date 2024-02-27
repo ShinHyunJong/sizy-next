@@ -1,21 +1,7 @@
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  FormControl,
-  FormLabel,
-  Heading,
-  Input,
-  SimpleGrid,
-  Stack,
-  Text,
-  Textarea,
-} from '@chakra-ui/react';
+import { Box, Container, Heading, Stack, Text } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { Controller, useForm } from 'react-hook-form';
-import { PatternFormat } from 'react-number-format';
+import { useForm } from 'react-hook-form';
 
 import { api } from '@/requests';
 
@@ -54,10 +40,23 @@ function Contact() {
   return (
     <Box mt="60px">
       <Container maxW="6xl" py={16}>
-        <Heading mb={8}>체험 문의</Heading>
+        <Heading mb={8}>무료 체험</Heading>
+        <Heading mb={8}>
+          아래 카카오 신청하기 버튼을 눌러 바로 체험해보세요!
+        </Heading>
         {!submit ? (
           <>
-            <SimpleGrid columns={{ base: 1, md: 2 }} gap={4}>
+            <Box
+              cursor="pointer"
+              fontWeight="bold"
+              w="fit-content"
+              p={4}
+              rounded="lg"
+              bg="#F7E600"
+            >
+              카카오로 신청하기
+            </Box>
+            {/* <SimpleGrid columns={{ base: 1, md: 2 }} gap={4}>
               <Stack>
                 <Controller
                   name="brand"
@@ -135,7 +134,7 @@ function Contact() {
               >
                 신청하기
               </Button>
-            </Flex>
+            </Flex> */}
           </>
         ) : (
           <Stack>

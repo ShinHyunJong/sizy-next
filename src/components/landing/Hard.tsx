@@ -1,5 +1,7 @@
 import { Box, Flex, Heading } from '@chakra-ui/react';
 
+import KakaoTrialButton from '../global/KakaoTrialButton';
+
 function Hard() {
   return (
     <Box p="5%">
@@ -30,10 +32,12 @@ function Hard() {
             <Heading
               wordBreak="keep-all"
               color="white"
+              mb={4}
               fontSize={{ base: '3xl', sm: '3xl', md: '6xl' }}
             >
               바로 무료 체험하세요!
             </Heading>
+            <KakaoTrialButton></KakaoTrialButton>
           </Flex>
         </Flex>
       </Box>

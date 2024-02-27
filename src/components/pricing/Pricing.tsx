@@ -1,6 +1,6 @@
 import {
   Box,
-  Button,
+  Center,
   Heading,
   HStack,
   List,
@@ -11,8 +11,9 @@ import {
   useColorModeValue,
   VStack,
 } from '@chakra-ui/react';
-import Link from 'next/link';
 import { FaCheckCircle } from 'react-icons/fa';
+
+import KakaoTrialButton from '../global/KakaoTrialButton';
 
 interface Props {
   children: React.ReactNode;
@@ -85,13 +86,9 @@ function Price() {
                 알림톡 무제한
               </ListItem>
             </List>
-            <Box w="80%" pt={7}>
-              <Link href="/contact">
-                <Button w="full" colorScheme="point" variant="outline">
-                  체험시작
-                </Button>
-              </Link>
-            </Box>
+            <Center w="80%" pt={7}>
+              <KakaoTrialButton></KakaoTrialButton>
+            </Center>
           </VStack>
         </PriceWrapper>
 

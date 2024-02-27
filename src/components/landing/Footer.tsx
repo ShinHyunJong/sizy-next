@@ -1,4 +1,5 @@
-import { Box, Container, Stack, Text } from '@chakra-ui/react';
+import { Box, Container, Flex, Stack, Text } from '@chakra-ui/react';
+import Link from 'next/link';
 
 function Footer() {
   return (
@@ -10,6 +11,11 @@ function Footer() {
           <Text>전화 010-7712-9638 |</Text>
           <Text>서울특별시 송파구 석촌호수로 194, 태호빌딩 6F |</Text>
           <Text>이메일 tonyshin@pulit.co.kr</Text>
+          <Flex mt={4}>
+            <Link href="terms">
+              <Text>이용 약관</Text>
+            </Link>
+          </Flex>
         </Stack>
       </Container>
     </Box>

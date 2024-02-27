@@ -45,7 +45,7 @@ function Header() {
         </Link>
         <Link href="/contact">
           <Button display={['none', 'block']} colorScheme="point">
-            체험 문의
+            무료 체험
           </Button>
         </Link>
       </Flex>
