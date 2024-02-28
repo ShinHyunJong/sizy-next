@@ -7,3 +7,12 @@ const API_ENDPOINT =
 export const api = axios.create({
   baseURL: API_ENDPOINT,
 });
+
+export const getLanldingStats = async (): Promise<{
+  sellerCount: number;
+  orderCount: number;
+  customerCount: number;
+}> => {
+  const { data } = await api.get('/landing/stats');
+  return data;
+};
