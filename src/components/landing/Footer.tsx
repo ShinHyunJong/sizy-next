@@ -11,9 +11,12 @@ function Footer() {
           <Text>전화 010-7712-9638 |</Text>
           <Text>서울특별시 송파구 석촌호수로 194, 태호빌딩 6F |</Text>
           <Text>이메일 tonyshin@pulit.co.kr</Text>
-          <Flex mt={4}>
+          <Flex mt={4} gap={4}>
             <Link href="terms">
-              <Text>이용 약관</Text>
+              <Text decoration="underline">이용 약관</Text>
+            </Link>
+            <Link href="privacy-policy">
+              <Text decoration="underline">개인정보 처리방침</Text>
             </Link>
           </Flex>
         </Stack>
