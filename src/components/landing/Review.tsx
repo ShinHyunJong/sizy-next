@@ -7,7 +7,6 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
-import Image from 'next/image';
 import { Fade } from 'react-awesome-reveal';
 
 import babaraLogo from '@/public/assets/images/landing/barbara.png';
@@ -31,7 +30,7 @@ const reviewList = [
   },
   {
     id: 3,
-    name: '캘빈클라인',
+    name: 'CK 언더웨어',
     review: `개인번호로 고객한테 연락해서 찝찝했는데, 카카오 알림톡으로 발송하니까 좋습니다.`,
     src: calvinLogo,
   },
@@ -70,7 +69,10 @@ function Review() {
                   borderRadius="2xl"
                 >
                   <Flex h="200px" justifyContent="center" alignItems="center">
-                    <Image alt={x.name} unoptimized src={x.src}></Image>
+                    {/* <Image alt={x.name} unoptimized src={x.src}></Image> */}
+                    <Text fontWeight="bold" fontSize="2xl">
+                      {x.name}
+                    </Text>
                   </Flex>
                   <Text color="gray.800" fontSize={['md', 'lg', 'xl']}>
                     {`"`}
