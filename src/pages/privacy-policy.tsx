@@ -1,4 +1,5 @@
-import { Container, Text } from '@chakra-ui/react';
+import { Box, Container, Text } from '@chakra-ui/react';
+import Markdown from 'react-markdown';
 
 import { policy } from '@/configs/term';
 
@@ -8,9 +9,9 @@ function PrivacyPolicyPage() {
       <Text fontWeight="bold" mb={4}>
         개인정보 처리방침
       </Text>
-      <Text whiteSpace="pre-line" fontSize="sm" color="gray.600">
-        {policy}
-      </Text>
+      <Box whiteSpace="pre-line">
+        <Markdown>{policy}</Markdown>
+      </Box>
     </Container>
   );
 }
