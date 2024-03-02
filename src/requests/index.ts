@@ -8,6 +8,13 @@ export const api = axios.create({
   baseURL: API_ENDPOINT,
 });
 
+export const kakaoApi = axios.create({
+  baseURL: `https://kauth.kakao.com`,
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
+  },
+});
+
 export const getLanldingStats = async (): Promise<{
   sellerCount: number;
   orderCount: number;

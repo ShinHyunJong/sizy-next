@@ -77,6 +77,7 @@ function Greeting() {
                         >
                           {data && (
                             <CountUp
+                              preserveValue
                               end={
                                 (data as { [key: string]: number })[x.value] ||
                                 0

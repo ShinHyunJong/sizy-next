@@ -18,6 +18,9 @@ const queryClient = new QueryClient();
 const MyApp = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     Hotjar.init(siteId, hotjarVersion);
+    if (window && window.Kakao && !window.Kakao.isInitialized()) {
+      window.Kakao.init('043762361bb87c486f61fabb9912774c');
+    }
   }, []);
 
   return (
