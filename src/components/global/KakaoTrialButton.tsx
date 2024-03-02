@@ -42,7 +42,7 @@ function KakaoTrialButton() {
         email,
         profileImg: profile_image_url,
       });
-      window.location.href = `http://localhost:5174/trial/${trialData}`;
+      window.location.href = `http://store.sizy.co.kr/trial/${trialData}`;
     } catch (error) {
       router.replace(router.pathname);
     }
