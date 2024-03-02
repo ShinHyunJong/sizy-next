@@ -1,18 +1,19 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { Box } from '@chakra-ui/react';
+import { Box, Spinner } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import { api, kakaoApi } from '@/requests';
 
 function KakaoTrialButton() {
+  const [redirecting, setRedirecting] = useState(false);
   const router = useRouter();
   const handleTrial = async () => {
     if (typeof window === 'undefined') return;
     if (!window.Kakao) return;
     // console.log(window.Kakao);
     // console.log(router);
-
+    setRedirecting(true);
     window.Kakao.Auth.authorize({
       redirectUri: `${window.location.origin}${router.pathname}`,
     });
@@ -43,7 +44,9 @@ function KakaoTrialButton() {
         profileImg: profile_image_url,
       });
       window.location.href = `https://store.sizy.co.kr/trial/${trialData}`;
+      setRedirecting(false);
     } catch (error) {
+      setRedirecting(false);
       router.replace(router.pathname);
     }
   };
@@ -65,7 +68,7 @@ function KakaoTrialButton() {
       rounded="lg"
       bg="#F7E600"
     >
-      카카오로 신청하기
+      {redirecting ? <Spinner></Spinner> : '카카오로 3초만에 신청하기'}
     </Box>
   );
 }
