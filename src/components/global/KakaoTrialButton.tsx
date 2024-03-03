@@ -43,8 +43,13 @@ function KakaoTrialButton() {
         email,
         profileImg: profile_image_url,
       });
-      window.location.href = `https://store.sizy.co.kr/trial/${trialData}`;
-      setRedirecting(false);
+      if (trialData.tokens) {
+        router.push(`https://store.sizy.co.kr/auth/signIn`);
+      } else {
+        // window.location.href = `https://store.sizy.co.kr/trial/${trialData}`;
+        router.push(`https://store.sizy.co.kr/trial/${trialData}`);
+        setRedirecting(false);
+      }
     } catch (error) {
       setRedirecting(false);
       router.replace(router.pathname);
