@@ -14,6 +14,7 @@ function KakaoTrialButton() {
     // console.log(window.Kakao);
     // console.log(router);
     setRedirecting(true);
+    console.log(window.Kakao);
     window.Kakao.Auth.authorize({
       redirectUri: `${window.location.origin}${router.pathname}`,
     });
