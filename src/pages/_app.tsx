@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { ChakraProvider } from '@chakra-ui/react';
 import Hotjar from '@hotjar/browser';
 import type { AppProps } from 'next/app';
+import Script from 'next/script';
 import { DefaultSeo } from 'next-seo';
 import { useEffect } from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
@@ -18,10 +19,13 @@ const queryClient = new QueryClient();
 const MyApp = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     Hotjar.init(siteId, hotjarVersion);
-    if (window && window.Kakao && !window.Kakao.isInitialized()) {
-      window.Kakao.init('043762361bb87c486f61fabb9912774c');
-    }
   }, []);
+
+  function kakaoInit() {
+    // 페이지가 로드되면 실행
+    window.Kakao.init('043762361bb87c486f61fabb9912774c');
+    console.log(window.Kakao.isInitialized());
+  }
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -43,6 +47,10 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <Header></Header>
         <Component {...pageProps} />
       </ChakraProvider>
+      <Script
+        src="https://developers.kakao.com/sdk/js/kakao.js"
+        onLoad={kakaoInit}
+      ></Script>
     </QueryClientProvider>
   );
 };
