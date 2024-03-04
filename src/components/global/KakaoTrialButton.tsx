@@ -10,11 +10,10 @@ function KakaoTrialButton() {
   const router = useRouter();
   const handleTrial = async () => {
     if (typeof window === 'undefined') return;
-    if (!window.Kakao) return;
+    if (!window.Kakao.Auth) return;
     // console.log(window.Kakao);
     // console.log(router);
     setRedirecting(true);
-    console.log(window.Kakao);
     window.Kakao.Auth.authorize({
       redirectUri: `${window.location.origin}${router.pathname}`,
     });
