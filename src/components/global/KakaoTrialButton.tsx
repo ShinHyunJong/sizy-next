@@ -10,7 +10,9 @@ function KakaoTrialButton() {
   const router = useRouter();
   const handleTrial = async () => {
     if (typeof window === 'undefined') return;
-    console.log(window.Kakao.isInitialized());
+    if (!window.Kakao.isInitialized()) {
+      window.Kakao.init('043762361bb87c486f61fabb9912774c');
+    }
     if (!window.Kakao.Auth) return;
     // console.log(window.Kakao);
     // console.log(router);
