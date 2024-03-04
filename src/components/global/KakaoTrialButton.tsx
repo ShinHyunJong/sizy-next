@@ -10,6 +10,7 @@ function KakaoTrialButton() {
   const router = useRouter();
   const handleTrial = async () => {
     if (typeof window === 'undefined') return;
+    console.log(window.Kakao.isInitialized());
     if (!window.Kakao.Auth) return;
     // console.log(window.Kakao);
     // console.log(router);
@@ -50,6 +51,7 @@ function KakaoTrialButton() {
         router.push(`https://store.sizy.co.kr/trial/${trialData}`);
         setRedirecting(false);
       }
+      window.Kakao.Auth.setAccessToken(null);
     } catch (error) {
       setRedirecting(false);
       router.replace(router.pathname);
