@@ -24,7 +24,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   function kakaoInit() {
     // 페이지가 로드되면 실행
     window.Kakao.init('043762361bb87c486f61fabb9912774c');
-    console.log(window.Kakao.isInitialized());
   }
 
   return (

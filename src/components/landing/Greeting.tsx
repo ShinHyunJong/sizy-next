@@ -23,7 +23,7 @@ const statList = [
 ];
 
 function Greeting() {
-  const { data } = useQuery('stats', getLanldingStats);
+  const { data, isLoading } = useQuery('stats', getLanldingStats);
 
   return (
     <Box className="mainBg" h="100vh" position="relative">
@@ -75,15 +75,14 @@ function Greeting() {
                           fontSize={['3xl', '4xl', '5xl']}
                           color="gray.200"
                         >
-                          {data && (
-                            <CountUp
-                              preserveValue
-                              end={
-                                (data as { [key: string]: number })[x.value] ||
-                                0
-                              }
-                            ></CountUp>
-                          )}
+                          <CountUp
+                            preserveValue
+                            end={
+                              data
+                                ? (data as { [key: string]: number })[x.value]
+                                : 0
+                            }
+                          ></CountUp>
                         </Text>
                       </Flex>
                     );
