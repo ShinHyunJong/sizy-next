@@ -79,8 +79,9 @@ function Greeting() {
                             preserveValue
                             end={
                               data
-                                ? (data as { [key: string]: number })[x.value] +
-                                  100000
+                                ? (data as { [key: string]: number })[
+                                    x.value
+                                  ] ?? 0 + 100000
                                 : 0
                             }
                           ></CountUp>
