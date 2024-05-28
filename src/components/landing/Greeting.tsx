@@ -17,9 +17,9 @@ import { fontSize } from '@/styles';
 import KakaoTrialButton from '../global/KakaoTrialButton';
 
 const statList = [
-  { value: 'orderCount', label: '작성된 기록' },
-  { value: 'customerCount', label: '단골 손님' },
-  { value: 'sellerCount', label: '사용중인 셀러' },
+  { value: 100850, label: '작성된 기록' },
+  { value: 100450, label: '단골 손님' },
+  { value: 93483, label: '사용중인 셀러' },
 ];
 
 function Greeting() {
@@ -75,16 +75,7 @@ function Greeting() {
                           fontSize={['3xl', '4xl', '5xl']}
                           color="gray.200"
                         >
-                          <CountUp
-                            preserveValue
-                            end={
-                              data
-                                ? (data as { [key: string]: number })[
-                                    x.value
-                                  ] ?? 0 + 100000
-                                : 0
-                            }
-                          ></CountUp>
+                          <CountUp preserveValue end={x.value}></CountUp>
                         </Text>
                       </Flex>
                     );
