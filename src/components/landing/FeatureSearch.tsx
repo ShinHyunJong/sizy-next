@@ -16,10 +16,10 @@ function FeatureSearch() {
           <Stack spacing={1}>
             <Fade direction="up" triggerOnce>
               <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
-                {`'`}누구였지?{`'`}
+                주문,수선,리오더,행사안내
               </Heading>
               <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
-                노트에서 찾지 말고
+                요청하는 손님을
               </Heading>
             </Fade>
 
@@ -40,14 +40,14 @@ function FeatureSearch() {
           </Flex>
           <Stack spacing={1}>
             <Heading fontSize={fontSize.sectionHeader}>
-              고객님을 찾았다면
+              똑같고, 뻔한 메시지 말고
             </Heading>
             <Heading fontSize={fontSize.sectionHeader}>
-              바로
-              <Text ml={2} as="strong" color="point.400">
-                문자 발송
+              특별한 메시지로
+              <Text mx={2} as="strong" color="point.400">
+                고객님에게
               </Text>
-              하세요.
+              감동을 주세요.
             </Heading>
           </Stack>
           <Flex

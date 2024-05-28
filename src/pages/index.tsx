@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 import FeatureAlimtalk from '@/components/landing/FeatureAlimtalk';
 import FeatureDelivery from '@/components/landing/FeatureDelivery';
+import FeatureNotice from '@/components/landing/FeatureNotice';
 import FeaturePickup from '@/components/landing/FeaturePickup';
 import FeatureRegister from '@/components/landing/FeatureRegister';
 import FeatureSearch from '@/components/landing/FeatureSearch';
@@ -63,11 +64,12 @@ const Index = () => {
     <>
       <Greeting></Greeting>
       {/* <Why></Why> */}
-      <FeatureAlimtalk></FeatureAlimtalk>
+      <FeatureSearch></FeatureSearch>
+      <FeatureNotice></FeatureNotice>
       <FeatureRegister></FeatureRegister>
+      <FeatureAlimtalk></FeatureAlimtalk>
       <FeatureDelivery></FeatureDelivery>
       <FeaturePickup></FeaturePickup>
-      <FeatureSearch></FeatureSearch>
       <Review></Review>
       <Hard></Hard>
       <Smart></Smart>

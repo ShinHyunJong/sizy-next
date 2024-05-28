@@ -23,10 +23,10 @@ function FeatureAlimtalk() {
               >
                 <Stack spacing={0}>
                   <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
-                    이제 더 이상 개인번호로
+                    자주 보내시는 문자는
                   </Heading>
                   <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
-                    연락하지 마세요.
+                    미리 알림톡으로 준비해놨어요.
                   </Heading>
                 </Stack>
               </Fade>

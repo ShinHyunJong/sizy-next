@@ -27,7 +27,7 @@ function Hard() {
               color="white"
               fontSize={{ base: '3xl', sm: '3xl', md: '6xl' }}
             >
-              주문, 더 이상 번거롭지 않아요.
+              본사가 해주는 것 이상으로
             </Heading>
             <Heading
               wordBreak="keep-all"
@@ -35,7 +35,7 @@ function Hard() {
               mb={4}
               fontSize={{ base: '3xl', sm: '3xl', md: '6xl' }}
             >
-              바로 무료 체험하세요!
+              고객관리 해보세요!
             </Heading>
             <KakaoTrialButton></KakaoTrialButton>
           </Flex>

@@ -17,8 +17,8 @@ import { fontSize } from '@/styles';
 import KakaoTrialButton from '../global/KakaoTrialButton';
 
 const statList = [
-  { value: 'orderCount', label: '작성된 주문장' },
-  { value: 'customerCount', label: '받으신 손님' },
+  { value: 'orderCount', label: '작성된 기록' },
+  { value: 'customerCount', label: '단골 손님' },
   { value: 'sellerCount', label: '사용중인 셀러' },
 ];
 
@@ -52,7 +52,7 @@ function Greeting() {
                   lineHeight="110%"
                   color="white"
                 >
-                  의류 매장을 위한
+                  오직 나만을 위한
                 </Heading>
                 <Heading
                   as="h1"
@@ -60,7 +60,7 @@ function Greeting() {
                   fontSize={['4xl', '5xl', '6xl']}
                   mb={8}
                 >
-                  온라인 주문장
+                  고객 관리
                 </Heading>
                 <SimpleGrid spacing={4} columns={3}>
                   {statList.map((x) => {
@@ -79,7 +79,8 @@ function Greeting() {
                             preserveValue
                             end={
                               data
-                                ? (data as { [key: string]: number })[x.value]
+                                ? (data as { [key: string]: number })[x.value] +
+                                  100000
                                 : 0
                             }
                           ></CountUp>
