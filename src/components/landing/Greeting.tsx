@@ -23,7 +23,7 @@ const statList = [
 ];
 
 function Greeting() {
-  const { data, isLoading } = useQuery('stats', getLanldingStats);
+  const { data } = useQuery('stats', getLanldingStats);
 
   return (
     <Box className="mainBg" h="100vh" position="relative">
