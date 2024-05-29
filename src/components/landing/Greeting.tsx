@@ -9,9 +9,7 @@ import {
 } from '@chakra-ui/react';
 import { Fade } from 'react-awesome-reveal';
 import CountUp from 'react-countup';
-import { useQuery } from 'react-query';
 
-import { getLanldingStats } from '@/requests';
 import { fontSize } from '@/styles';
 
 import KakaoTrialButton from '../global/KakaoTrialButton';
@@ -23,7 +21,7 @@ const statList = [
 ];
 
 function Greeting() {
-  const { data } = useQuery('stats', getLanldingStats);
+  // const { data } = useQuery('stats', getLanldingStats);
 
   return (
     <Box className="mainBg" h="100vh" position="relative">
