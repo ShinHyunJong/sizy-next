@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Stack } from '@chakra-ui/react';
+import { Box, Container, Heading, Stack, Text } from '@chakra-ui/react';
 import { Fade } from 'react-awesome-reveal';
 
 // import customerNotiImg from '@/public/assets/images/landing/customerNoti.png';
@@ -19,7 +19,21 @@ function FeatureNotice() {
                 고객 정보는 매니저님의 자산입니다.
               </Heading>
               <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
-                프라이빗하고 안전하게 관리하세요.
+                <Text color="point.400" as="b">
+                  프라이빗
+                </Text>
+                하고 안전하게 관리하세요.
+              </Heading>
+              <Heading
+                mt={4}
+                wordBreak="keep-all"
+                fontSize={fontSize.titleHeader}
+              >
+                매니저님만의{' '}
+                <Text color="point.400" as="b">
+                  차별화
+                </Text>
+                된 서비스를 제공할 수 있습니다.
               </Heading>
             </Fade>
           </Stack>
