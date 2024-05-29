@@ -30,15 +30,14 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <QueryClientProvider client={queryClient}>
       <ChakraProvider theme={theme}>
         <DefaultSeo
-          title={'사이지::오프라인 매장을 위한 온라인 주문장'}
-          description={`사이지는 온라인 주문장으로 매장에서의 번거로움을 해소합니다.`}
+          title={'사이지::오직 나만을 위한 단골 고객 관리'}
+          description={`사이지는 내 매장의 특별함을 만듭니다.`}
           canonical={`https://sizy.co.kr`}
           openGraph={{
             type: 'website',
             url: `https://sizy.co.kr`,
             title: `sizy`,
-            description:
-              '사이지는 온라인 주문장으로 매장에서의 번거로움을 해소합니다.',
+            description: '사이지는 내 매장의 특별함을 만듭니다.',
             siteName: 'sizy',
             images: [{ url: 'https://assets.sizy.co.kr/landing/ogImage.jpeg' }],
           }}
