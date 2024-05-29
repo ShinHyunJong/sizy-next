@@ -7,6 +7,7 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
+import Image from 'next/image';
 import { Fade } from 'react-awesome-reveal';
 
 import babaraLogo from '@/public/assets/images/landing/barbara.png';
@@ -69,10 +70,10 @@ function Review() {
                   borderRadius="2xl"
                 >
                   <Flex h="200px" justifyContent="center" alignItems="center">
-                    {/* <Image alt={x.name} unoptimized src={x.src}></Image> */}
-                    <Text fontWeight="bold" fontSize="2xl">
+                    <Image alt={x.name} unoptimized src={x.src || ''}></Image>
+                    {/* <Text fontWeight="bold" fontSize="2xl">
                       {x.name}
-                    </Text>
+                    </Text> */}
                   </Flex>
                   <Text color="gray.800" fontSize={['md', 'lg', 'xl']}>
                     {`"`}

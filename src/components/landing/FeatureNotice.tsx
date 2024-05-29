@@ -13,12 +13,12 @@ function FeatureNotice() {
             <Fade direction="up" triggerOnce>
               <Heading
                 wordBreak="keep-all"
-                fontSize={fontSize.titleHeader}
+                fontSize={fontSize.sectionHeader}
               ></Heading>
-              <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
+              <Heading wordBreak="keep-all" fontSize={fontSize.sectionHeader}>
                 고객 정보는 매니저님의 자산입니다.
               </Heading>
-              <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
+              <Heading wordBreak="keep-all" fontSize={fontSize.sectionHeader}>
                 <Text color="point.400" as="b">
                   프라이빗
                 </Text>
@@ -27,7 +27,7 @@ function FeatureNotice() {
               <Heading
                 mt={4}
                 wordBreak="keep-all"
-                fontSize={fontSize.titleHeader}
+                fontSize={fontSize.sectionHeader}
               >
                 매니저님만의{' '}
                 <Text color="point.400" as="b">
