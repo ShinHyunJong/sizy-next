@@ -15,9 +15,8 @@ import { fontSize } from '@/styles';
 import KakaoTrialButton from '../global/KakaoTrialButton';
 
 const statList = [
-  { value: 100850, label: '작성된 기록' },
-  { value: 100450, label: '단골 손님' },
-  { value: 93483, label: '사용중인 셀러' },
+  { value: 10424, label: '등록된 단골 손님' },
+  { value: 20850, label: '작성된 주문/수선/노트' },
 ];
 
 function Greeting() {
