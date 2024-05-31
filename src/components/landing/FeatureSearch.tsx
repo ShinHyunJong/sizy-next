@@ -19,7 +19,7 @@ function FeatureSearch() {
                 주문,수선,리오더,행사안내
               </Heading>
               <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
-                요청하는 손님을
+                약속을 쉽게 저장하고 기억하세요
               </Heading>
             </Fade>
 

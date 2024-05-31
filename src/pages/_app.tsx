@@ -30,7 +30,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <QueryClientProvider client={queryClient}>
       <ChakraProvider theme={theme}>
         <DefaultSeo
-          title={'사이지::오직 나만을 위한 단골 고객 관리'}
+          title={'사이지::오직 나만을 위한 고객 약속 관리'}
           description={`사이지는 내 매장의 특별함을 만듭니다.`}
           canonical={`https://sizy.co.kr`}
           openGraph={{

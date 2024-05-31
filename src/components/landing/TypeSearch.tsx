@@ -12,7 +12,7 @@ function TypeSearch() {
         speed={10}
         repeat={Infinity}
         omitDeletionAnimation
-        sequence={[1000, '단골 고객으로 만드세요.', () => {}]}
+        sequence={[1000, '빠르게 연락할 수 있어요.', () => {}]}
         wrapper="h1"
         cursor={true}
       />

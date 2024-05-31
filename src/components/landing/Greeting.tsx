@@ -57,7 +57,7 @@ function Greeting() {
                   fontSize={['4xl', '5xl', '6xl']}
                   mb={8}
                 >
-                  고객 관리
+                  고객 약속 관리
                 </Heading>
                 <SimpleGrid spacing={4} columns={3}>
                   {statList.map((x) => {
