@@ -1,11 +1,13 @@
 import {
   Box,
   Container,
+  Flex,
   Heading,
   SimpleGrid,
   Stack,
   Text,
 } from '@chakra-ui/react';
+import Image from 'next/image';
 import { Fade } from 'react-awesome-reveal';
 
 import babaraLogo from '@/public/assets/images/landing/barbara.png';
@@ -47,7 +49,7 @@ function Review() {
       <Container maxW="4xl">
         <Stack spacing={12}>
           <Fade direction="up" triggerOnce>
-            <Stack spacing={1} textAlign="center">
+            <Stack spacing={1} textAlign="center" mb={4}>
               <Heading wordBreak="keep-all" fontSize={fontSize.titleHeader}>
                 이미 매니저님들이
               </Heading>
@@ -67,13 +69,13 @@ function Review() {
                   p={4}
                   borderRadius="2xl"
                 >
-                  {/* <Flex h="200px" justifyContent="center" alignItems="center">
+                  <Flex h="200px" justifyContent="center" alignItems="center">
                     <Image alt={x.name} unoptimized src={x.src || ''}></Image>
-                    <Text fontWeight="bold" fontSize="2xl">
+                    {/* <Text fontWeight="bold" fontSize="2xl">
                       {x.name}
-                    </Text>
-                  </Flex> */}
-                  <Text color="gray.800" fontSize={['md', 'lg', 'xl']}>
+                    </Text> */}
+                  </Flex>
+                  <Text color="gray.600" fontSize={['md', 'lg', 'xl']}>
                     {`"`}
                     {x.review}
                     {`"`}
