@@ -57,14 +57,14 @@ function Price() {
         <PriceWrapper>
           <Box py={4} px={12}>
             <Text fontWeight="500" fontSize="2xl">
-              두달 무료체험 후, 월 결제
+              한달 무료체험 후, 월 결제
             </Text>
             <HStack justifyContent="center">
               <Text fontSize="3xl" fontWeight="600">
                 ₩
               </Text>
               <Text fontSize="5xl" fontWeight="900">
-                32,900
+                7,900
               </Text>
               <Text fontSize="3xl" color="gray.500">
                 /월
