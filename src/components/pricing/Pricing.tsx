@@ -64,7 +64,7 @@ function Price() {
                 ₩
               </Text>
               <Text fontSize="5xl" fontWeight="900">
-                7,900
+                10,900
               </Text>
               <Text fontSize="3xl" color="gray.500">
                 /월
